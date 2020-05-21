@@ -15,7 +15,7 @@ endif()
 
 # Check if pybind11 is being used directly or via add_subdirectory
 set(MEXUTILS_MASTER_PROJECT OFF)
-if (CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
+if (NOT CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
   set(MEXUTILS_MASTER_PROJECT ON)
   set(MatlabMexutils_BuildExamples CACHE BOOL OFF FORCE)
   set(MatlabMexutils_BuildDocs CACHE BOOL OFF FORCE)

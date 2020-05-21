@@ -18,7 +18,7 @@ public:
   mexClass(const mxArray *mxObj, int nrhs, const mxArray *prhs[]) : VarA(1), VarB({1.0f, 2.0f, 3.0f}), VarC("StringVar")
   {}
 
-  static std::string get_classname() { return "mexClass_demo"; }; // must match the Matlab classname
+  static std::string get_classname() { return "mexClass"; }; // must match the Matlab classname
 
   static bool static_handler(std::string command, int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
   {

@@ -1,6 +1,6 @@
 clear; close all; drawnow
 
-obj = mexClass_demo
+obj = mexClass
 
 obj.VarA = 5; % good
 obj.VarB = 1:10; % good
@@ -12,7 +12,7 @@ catch ME
 end
 
 %
-mexClass_demo.static_fcn()
+mexClass.static_fcn()
 
 obj.train();
 try
